@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.params=text\ integer
+comment0.target=Text(java.lang.String,\ int)
+comment1.params=
+comment1.target=void\ act()
+comment1.text=\n\ Act\ -\ do\ whatever\ the\ Text\ wants\ to\ do.\ This\ method\ is\ called\ whenever\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\n
+comment2.params=text
+comment2.target=void\ setText(java.lang.String)
+comment3.params=integer
+comment3.target=void\ setText(int)
+comment4.params=
+comment4.target=void\ incrementInteger()
+comment5.params=text\ integer
+comment5.target=void\ updateImage(java.lang.String,\ int)
+numComments=6
