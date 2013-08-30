@@ -12,10 +12,10 @@ public class Player extends Actor
      * Act - do whatever the Player wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
-    
-    boolean isFiring = false;
-    SpaceInvaderWorld world;
-    Bullet bullet;
+    private int speed =4;
+    private boolean isFiring = false;
+    private SpaceInvaderWorld world;
+    private Bullet bullet;
     //ArrayList<Bullet> bullets = new ArrayList<Bullet>();
     public Player(SpaceInvaderWorld world){
         this.world = world;
@@ -31,10 +31,10 @@ public class Player extends Actor
         if (Greenfoot.isKeyDown(" ")){
             fire();}
         if (Greenfoot.isKeyDown("left")){
-            move(-4);}
+            move(-speed);}
         
         if (Greenfoot.isKeyDown("right")){
-            move(4);}
+            move(speed);}
         
         if (bullet != null)
         {
@@ -46,7 +46,13 @@ public class Player extends Actor
             }
         }
     }
+    public boolean isFiring(){
+        return isFiring();
+    }
     
+    public void setFiring(boolean isFiring){
+        this.isFiring = isFiring;
+    }
     public void fire(){
         if (isFiring == false){
             isFiring = true;

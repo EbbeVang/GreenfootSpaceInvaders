@@ -12,6 +12,9 @@ public class Bullet extends Actor
      * Act - do whatever the Bullet wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
+    
+    private int speed = 4;
+    
     SpaceInvaderWorld world;
     Player player;
     
@@ -23,9 +26,9 @@ public class Bullet extends Actor
     
     public void act() 
     {
-        move(2);
+        move(speed);
         
         if (getY() < 10){
-            player.isFiring = false;}    
+            player.setFiring(false);}    
 }
 }

@@ -24,6 +24,7 @@ public class Enemy1 extends Actor
         if (isTouching(Bullet.class)){
             world.kills.incrementInteger();
             world.removeObject(this);
+            Greenfoot.playSound("explosion.wav");
             return;
         }
         
